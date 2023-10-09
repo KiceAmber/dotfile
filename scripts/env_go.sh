@@ -1,15 +1,31 @@
-# 下载 Go1.20.4 版本压缩包
-cd ~/Downloads
+#!/bin/bash
 
-wget https://golang.google.cn/dl/go1.20.4.linux-amd64.tar.gz
+if [ ! -e "$HOME/Downloads" ]; then 
+    mkdir $HOME/Downloads
+fi
+cd $HOME/Downloads 
+
+if [ ! -e "$HOME/Downloads/go1.20.4.linux-amd64.tar.gz" ]; then 
+    wget https://golang.google.cn/dl/go1.20.4.linux-amd64.tar.gz
+fi
 
 tar -xvzf go1.20.4.linux-amd64.tar.gz
 
-sudo mv go /usr/local
+sudo -v
 
-sudo echo export GOPATH=$HOME/Project/go >> /etc/profile
-sudo echo export GOROOT=/usr/local/go >> /etc/profile
-sudo echo export PATH=$PATH:$GOPATH/bin:$GOROOT/bin >> /etc/profile
+if [ -e "/usr/local/go" ]; then
+    sudo rm -rf /usr/local/go
+    sudo mv go /usr/local
+fi
+
+sudo sh -c 'echo "export GOPATH=$HOME/Repo/go" >> /etc/profile'
+sudo sh -c 'echo "export GOROOT=/usr/local/go" >> /etc/profile'
+sudo sh -c 'echo "export PATH=$PATH:$GOPATH/bin:$GOROOT/bin" >> /etc/profile'
+
+if [ ! -d "$HOME/Repo" ]; then 
+    mkdir $HOME/Repo
+fi
+
 
 source /etc/profile
 

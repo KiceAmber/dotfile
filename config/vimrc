@@ -1,0 +1,27 @@
+let mapleader=";" 
+syntax on 
+set mouse=a
+set number
+set wildmenu
+set tabstop=4
+set hlsearch
+set ignorecase
+set laststatus=4
+set smartcase
+set autoindent
+set showcmd
+exec "nohlsearch"
+
+inoremap jk <Esc>
+map      W  :w<CR>
+map      R  :source $RIMEVIM<CR>
+map      B  :q <CR>
+map      J  5j
+map      K  5k
+map      PI :PlugInstall<CR> 
+noremap  <LEADER><CR> :nohlsearch<CR>
+
+map sL :set splitright<CR> :vsplit<CR>
+map sH :set nosplitright<CR> :vsplit<CR>
+map sJ :set splitbelow<CR> :split<CR>
+map sK :set nosplitbelow<CR> :split<CR>

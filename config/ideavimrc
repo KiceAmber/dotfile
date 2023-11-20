@@ -1,0 +1,30 @@
+let mapleader=';'
+
+set hlsearch
+set smartcase
+set showmode
+
+" ============================
+" NORMAL MODE
+" ============================
+" 快速下移
+nnoremap J 5j
+nnoremap K 5k
+
+" 切换标签页
+nnoremap H gT
+nnoremap L gT
+
+"
+nnoremap <Leader>c :nohlsearch<CR>
+
+" ============================
+" INSERT MODE
+" ============================
+inoremap jk <Esc>
+
+" ============================
+" VISUAL MODE
+" ============================
+vnoremap J 5j
+vnoremap K 5k

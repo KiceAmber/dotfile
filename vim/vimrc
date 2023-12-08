@@ -1,4 +1,4 @@
-let mapleader=";" 
+let mapleader=";"
 syntax on 
 set mouse=a
 set number
@@ -14,8 +14,6 @@ exec "nohlsearch"
 
 inoremap jk <Esc>
 map      W  :w<CR>
-map      R  :source $RIMEVIM<CR>
-map      B  :q <CR>
 map      J  5j
 map      K  5k
 map      PI :PlugInstall<CR> 
@@ -25,3 +23,6 @@ map sL :set splitright<CR> :vsplit<CR>
 map sH :set nosplitright<CR> :vsplit<CR>
 map sJ :set splitbelow<CR> :split<CR>
 map sK :set nosplitbelow<CR> :split<CR>
+
+noremap H :tabprevious<CR>
+noremap L :tabnext<CR>

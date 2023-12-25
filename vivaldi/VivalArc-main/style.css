@@ -1,0 +1,9 @@
+/* 
+You can add references to your own .css stylessheets in this file
+---------------------------------------------------------------
+sub_arc.css, 这个作用是隐藏Tab里的新建标签按钮和底下的同步按钮和垃圾筒按钮。
+*/
+
+@import url("css/main_arc.css");
+/* @import url("css/sub_arc.css"); */
+

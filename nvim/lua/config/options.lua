@@ -8,3 +8,4 @@ opt.shiftwidth = 4
 opt.relativenumber = false
 
 vim.o.guifont = "FantasqueSansM Nerd Font:h16"
+

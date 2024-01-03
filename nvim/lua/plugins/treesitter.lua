@@ -1,11 +1,11 @@
 return {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-        ensure_installed = {
-            "markdown",
-            "markdown_inline",
-            "json",
-            "bash",
-        }
-    }
+	"nvim-treesitter/nvim-treesitter",
+	opts = {
+		ensure_installed = {
+			"markdown",
+			"markdown_inline",
+			"json",
+			"bash",
+		},
+	},
 }

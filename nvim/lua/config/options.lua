@@ -7,4 +7,4 @@ opt.tabstop = 4
 opt.shiftwidth = 4
 opt.relativenumber = false
 
-vim.o.guifont = "FantasqueSansM Nerd Font:h14"
+vim.o.guifont = "Maple Mono NF:h13"

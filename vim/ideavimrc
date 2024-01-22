@@ -1,4 +1,4 @@
-let mapleader=';'
+let mapleader=' '
 
 set hlsearch
 set smartcase
@@ -13,7 +13,7 @@ nnoremap K 5k
 
 " 切换标签页
 nnoremap H gT
-nnoremap L gT
+nnoremap L gt
 
 "
 nnoremap <Leader>c :nohlsearch<CR>

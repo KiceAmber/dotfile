@@ -5,6 +5,8 @@ local opt = vim.opt
 
 opt.tabstop = 4
 opt.shiftwidth = 4
-opt.relativenumber = false
+opt.relativenumber = true
 
-vim.o.guifont = "Maple Mono NF:h13"
+-- vim.o.guifont = "FiraCode Nerd Font:h11"
+-- vim.o.guifont = "CommitMono Nerd Font:h11"
+vim.o.guifont = "SFMono Nerd Font Mono:h15"

@@ -1,4 +1,4 @@
-let mapleader=";"
+let mapleader=" "
 syntax on 
 set mouse=a
 set number
@@ -23,6 +23,9 @@ map sL :set splitright<CR> :vsplit<CR>
 map sH :set nosplitright<CR> :vsplit<CR>
 map sJ :set splitbelow<CR> :split<CR>
 map sK :set nosplitbelow<CR> :split<CR>
+
+noremap <C-h> <C-w>h
+noremap <C-l> <C-w>l
 
 noremap H :tabprevious<CR>
 noremap L :tabnext<CR>

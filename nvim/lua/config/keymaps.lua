@@ -4,13 +4,7 @@
 local Util = require("lazyvim.util")
 local map = Util.safe_keymap_set
 
-map("i", "jk", "<Esc>")
-
+map("i", "jk", "<ESC>")
 -- basic cursor move keymap
 map({ "n", "x" }, "<S-j>", "5j")
-map({ "n", "x" }, "<S-j>", "5j")
-map("n", "<S-k>", "5k")
-
--- copy and paste
-map("v", "<C-c>", '"+y')
-map({ "n", "i" }, "<C-v>", '"+p')
+map({ "n", "x" }, "<S-k>", "5k")

@@ -8,5 +8,5 @@ opt.shiftwidth = 4
 opt.relativenumber = true
 
 -- vim.o.guifont = "FiraCode Nerd Font:h11"
--- vim.o.guifont = "CommitMono Nerd Font:h11"
-vim.o.guifont = "SFMono Nerd Font Mono:h15"
+vim.o.guifont = "JetBrainsMono Nerd Font:h13"
+--vim.o.guifont = "SFMono Nerd Font Mono:h13"

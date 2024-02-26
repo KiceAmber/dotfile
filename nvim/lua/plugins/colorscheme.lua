@@ -2,7 +2,7 @@
 -- return {
 -- 	{
 -- 		"navarasu/onedark.nvim",
--- 		lazy = false,
+-- 		lazy = true,
 -- 		priority = 1000,
 -- 		config = function()
 -- 			require("onedark").setup({
@@ -20,25 +20,25 @@
 -- }
 
 -- gruvbox theme
-return {
-	-- add gruvbox
-	{ "ellisonleao/gruvbox.nvim" },
-
-	-- Configure LazyVim to load gruvbox
-	{
-		"LazyVim/LazyVim",
-		opts = {
-			colorscheme = "gruvbox",
-		},
-	},
-}
+-- return {
+-- 	-- add gruvbox
+-- 	{ "ellisonleao/gruvbox.nvim" },
+--
+-- 	-- Configure LazyVim to load gruvbox
+-- 	{
+-- 		"LazyVim/LazyVim",
+-- 		opts = {
+-- 			colorscheme = "gruvbox",
+-- 		},
+-- 	},
+-- }
 
 -- tokyonight theme
--- return {
--- 	"folke/tokyonight.nvim",
--- 	lazy = true,
--- 	opts = { style = "moon" },
--- }
+return {
+	"folke/tokyonight.nvim",
+	lazy = true,
+	opts = { style = "moon" },
+}
 --
 -- catppuccin theme
 -- return {

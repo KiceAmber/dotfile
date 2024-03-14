@@ -16,7 +16,6 @@ inoremap jk <Esc>
 map      W  :w<CR>
 map      J  5j
 map      K  5k
-map      PI :PlugInstall<CR> 
 noremap  <LEADER><CR> :nohlsearch<CR>
 
 map sL :set splitright<CR> :vsplit<CR>

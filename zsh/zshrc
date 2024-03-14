@@ -119,11 +119,16 @@ fi
 source $ZSH/oh-my-zsh.sh
 
 alias gf=gf
+alias nv="neovide"
 alias remote="kitty +kitten ssh root@120.77.176.211"
+alias ua="kitty +kitten ssh amber@172.16.142.129"
+alias um="kitty +kitten ssh minio@172.16.142.129"
 alias pro="export https_proxy=127.0.0.1:7890 http_proxy=127.0.0.1:7890"
+alias syn="sudo pacman -Syu && yay"
 
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /usr/share/nvm/init-nvm.sh
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
